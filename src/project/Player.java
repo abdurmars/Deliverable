@@ -1,7 +1,7 @@
 /**
  * SYST 17796 Project Base code.
  * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
+ * Add your name as a modifier and the date!!
  */
 package project;
 
