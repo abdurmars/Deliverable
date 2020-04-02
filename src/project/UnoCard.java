@@ -33,8 +33,19 @@ public class UnoCard extends Card {
      * The enum class records the 15 ranks of the Uno game. 
      */
     public enum Rank {
-        ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
-        NINE, SKIP, REVERSE, DRAW_TWO, DRAW_FOUR, WILDCARD;
+        ZERO (0), ONE (1), TWO (2), THREE (3), FOUR (4), FIVE (5), SIX (6), 
+        SEVEN (7), EIGHT (8),NINE (9), SKIP (20), REVERSE (20), DRAW_TWO (20), 
+        DRAW_FOUR (40), WILDCARD(40);
+        
+        public int points;
+        
+        private Rank(int points){
+            this.points = points;
+        }
+        
+        public int getPoints(){
+            return points;
+        }
     }
     
     
