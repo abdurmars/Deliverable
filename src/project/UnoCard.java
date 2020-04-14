@@ -1,5 +1,7 @@
 package project;
 
+import project.Card;
+
 /**
  *This program models a playing card from the Uno card game. the program know 
  * the four different color suits of a Uno card and the 15 different ranks of a

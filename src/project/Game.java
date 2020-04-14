@@ -4,9 +4,6 @@
  * Add your name as a modifier and the date!
  */
 package project;
-
-import java.util.ArrayList;
-
 /**
  * The class that models your game. You should create a more specific
  * child of this class and instantiate the methods given.
@@ -15,12 +12,11 @@ import java.util.ArrayList;
 public abstract class Game 
 {
     private final String gameName;//the title of the game
-    private ArrayList <Player> players;// the players of the game
+    private Player player; // the players of the game
     
     public Game(String givenName)
     {
         gameName = givenName;
-        players = new ArrayList();
     }
 
     /**
@@ -34,17 +30,17 @@ public abstract class Game
      /**
      * @return the players of this game
      */
-    public ArrayList <Player> getPlayers() 
+    public Player getPlayer() 
     {
-        return players;
+        return player;
     }
 
     /**
-     * @param players the players of this game
+     * @param player
      */
-    public void setPlayers(ArrayList <Player> players) 
+    public void setPlayers(Player player) 
     {
-        this.players = players;
+        this.player = player;
     }
     
     /**
