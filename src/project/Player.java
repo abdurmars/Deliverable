@@ -11,7 +11,7 @@ package project;
  */
 public abstract class Player 
 {
-    private String playerID; //the unique ID for this player
+    private String playerID; //the unique ID for this player 
     
     /**
      * A constructor that allows you to set the player's unique ID
