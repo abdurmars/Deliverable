@@ -17,7 +17,7 @@ public class UnoPlayer extends Player {
 
     public UnoPlayer(String name) {
         super(name);
-        hand = new Deck();
+        hand = new Deck(7); // number might change
     }
 
     public Deck getHand() {
