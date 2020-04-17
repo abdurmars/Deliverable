@@ -5,7 +5,6 @@
  */
 package project;
 
-import java.util.ArrayList;
 
 /**
  * The class that models your game. You should create a more specific
@@ -14,37 +13,31 @@ import java.util.ArrayList;
  */
 public abstract class Game 
 {
-    private final String gameName;//the title of the game
-    private ArrayList <Player> players;// the players of the game
+    private String player;// the players of the game
     
-    public Game(String givenName)
+    public Game(String player)
     {
-        gameName = givenName;
-        players = new ArrayList();
+       setPlayer(player);
     }
 
     /**
      * @return the gameName
      */
-    public String getGameName() 
-    {
-        return gameName;
-    }
     
      /**
      * @return the players of this game
      */
-    public ArrayList <Player> getPlayers() 
+    public String getPlayer() 
     {
-        return players;
+        return player;
     }
 
     /**
-     * @param players the players of this game
+     * @param player the players of this game
      */
-    public void setPlayers(ArrayList <Player> players) 
+    public void setPlayer(String player) 
     {
-        this.players = players;
+        this.player = player;
     }
     
     /**
