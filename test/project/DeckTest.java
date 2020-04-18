@@ -15,23 +15,6 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class DeckTest {
     
-   
-    
-    
-
-    /**
-     * Test of showCards method, of class Deck.
-     */
-    @Test
-    public void testShowCards() {
-        System.out.println("showCards");
-        Deck instance = null;
-        ArrayList<Card> expResult = null;
-        ArrayList<Card> result = instance.showCards();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 
     /**
      * Test of shuffle method, of class Deck.
@@ -49,9 +32,9 @@ public class DeckTest {
      * Test of addCard method, of class Deck.
      */
     @Test
-    public void testAddCard() {
-        System.out.println("addCard");
-        ArrayList<Card> card = null;
+    public void testAddCardGood() {
+        System.out.println("addCard-good");
+        ArrayList<Card> card = new ArrayList();
         Deck instance = null;
         instance.addCard(card);
         // TODO review the generated test code and remove the default call to fail.
@@ -85,5 +68,5 @@ public class DeckTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }

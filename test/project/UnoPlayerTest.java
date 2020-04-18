@@ -5,7 +5,6 @@
  */
 package project;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,13 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class UnoPlayerTest {
     
-    public UnoPlayerTest() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-
+   
     /**
      * Test of getHand method, of class UnoPlayer.
      */
@@ -33,7 +26,7 @@ public class UnoPlayerTest {
         Deck result = instance.getHand();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -46,7 +39,7 @@ public class UnoPlayerTest {
         UnoPlayer instance = null;
         instance.setHand(hand);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -93,10 +86,11 @@ public class UnoPlayerTest {
      * Test of play method, of class UnoPlayer.
      */
     @Test
-    public void testPlay() {
-        System.out.println("play");
-        UnoPlayer instance = null;
-        instance.play();
+    public void testPlayGood() {
+        System.out.println("Testplay - good");
+        String s = "blue 7";
+        UnoPlayer instance = new UnoPlayer("bob");
+        instance.play(s);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

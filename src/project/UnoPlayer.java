@@ -44,7 +44,7 @@ public class UnoPlayer extends Player {
     }
 
     @Override
-    public void play() {
+    public void play(String card) {
 
     }
 
