@@ -26,16 +26,7 @@ public abstract class Game {
     /**
      * @return the players of this game
      */
-    public String getPlayer() {
-        return player;
-    }
-
-    /**
-     * @param player the players of this game
-     */
-    public void setPlayer(String player) {
-        this.player = player;
-    }
+    
 
     /**
      * Play the game. This might be one method or many method calls depending on
